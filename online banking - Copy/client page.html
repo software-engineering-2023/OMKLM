@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    
+		<title>Virtual Vault Website</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+    </title>
+</head>
+
+
+<body id="top">
+    <!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+     	 		<div class="sk-rect1"></div>
+       			<div class="sk-rect2"></div>
+       			<div class="sk-rect3"></div>
+      	 		<div class="sk-rect4"></div>
+      			<div class="sk-rect5"></div>
+     		</div>
+    	</div>
+    	<!-- end preloader -->
+
+        
+            
+        
+    	<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					
+					<a href="#" class="navbar-brand"> Your Personal Account Information</a>
+				</div>
+			<br>
+            <br>
+            <br>
+			</div>
+            
+		</nav>
+        <br>
+            <br>
+            <br><div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+                <label>View All Bank Accounts for Users:</label>
+                <br>
+
+               
+                  <!-- HTML dropdown list -->
+                  <select style="color:black;">
+                    <option value="option1"class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">Savings Account Number423</option>
+                    <option value="option2"class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">Regular Account Number745</option>
+                    <option value="option3"class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">Current Account Number980</option>
+                  </select>
+                  
+                  
+
+                  <br>
+                
+                  <br>
+            <button id="trans"class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s"button onclick="location.href='transactions.html'">View All Transactions</button>
+            <br>
+            <br>
+            
+            <input type="checkbox" id="myCheckbox6" onchange="showPopup6()">
+                <label for="myCheckbox">View Account Information </label>
+                
+                <div id="popup6" style="display: none;">
+                  Account Number:980
+                  <br>
+                  Account Type: Current Account
+                  <br>
+                  Account Current Balance: 2000$
+                  <br>
+                  Withstanding fees to be paid: 
+                  <div>
+                    <ul>
+                      <li>
+                        <a href="#">Overdraft fees:500$</a>
+                      </li>
+                      <li>
+                        <a href="#">ATM fees:20$</a>
+                      </li>
+                    </ul>
+                  </div>
+                  Automatic Payments: 
+                  <br>
+                  <input name="payments" type="name" class="form-control" id="payments">
+                  <br>
+                  <button onclick="showPopUp()"class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">Done</button>
+                  <br>
+                  Credit Cards On Account:
+                  <br>
+                  <div>
+                    <ul>
+                      <li>
+                        <a href="#">Credit Card Number:12435
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Expiry Date:25/04/2024</a>
+                      </li>
+                      <li>
+                        <a href="#">CVV: 456</a>
+                      </li>
+                      <button id="back"class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s"button onclick="location.href='creditcardTransactions.html'">View Credit Card Transactions</button>
+           <script>
+               function showPopUp() {
+                 alert("Automatic Payment Set Successfully");
+               }
+               </script>
+                </div>
+                <br>
+                <script>
+                  function showPopup6() {
+                    var checkbox = document.getElementById("myCheckbox6");
+                    var popup = document.getElementById("popup6");
+                
+                    if (checkbox.checked) {
+                      popup.style.display = "block";
+                    } else {
+                      popup.style.display = "none";
+                    }
+                  }
+                </script>
+            <br>
+                
+                
+                
+               <script>
+                function showPopup2() {
+                var checkbox = document.getElementById("myCheckbox2");
+                var popup = document.getElementById("popup2");
+
+                if (checkbox.checked) {
+                popup.style.display = "block";
+                } else {
+              popup.style.display = "none";
+              }
+              }
+            </script>
+               
+                
+                
+
+                <div class="media-body">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+            <div class="media">
+                <div class="media-heading-wrapper">
+                    <div class="media-object pull-left">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    
+</body>
+</html>
